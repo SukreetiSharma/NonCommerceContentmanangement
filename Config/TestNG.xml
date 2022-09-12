@@ -2,11 +2,16 @@
 <suite name="All Test Cases" verbose="1" >
     <test name="Verify User is able to Login">
         <parameter name="browserName" value="chrome"></parameter>
-
-        <!--        <parameter name="browserName" value="firefox"></parameter>-->
-        <parameter name="testRunId" value="TCTC-3"/>
+        <parameter name="testRunId" value="TCTC-1"/>
         <classes>
             <class name="NopCommerce.Test.TestUserAbleToLogin"/>
+        </classes>
+    </test>
+    <test name="Verify User is able to Add topics">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="testRunId" value="TCTC-2"/>
+        <classes>
+            <class name="NopCommerce.Test.TestUserableToAddTopics"/>
         </classes>
     </test>
 </suite>
