@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Cases" verbose="1" >
+    <test name="Verify User is able to Login">
+        <parameter name="browserName" value="chrome"></parameter>
+
+        <!--        <parameter name="browserName" value="firefox"></parameter>-->
+        <parameter name="testRunId" value="TCTC-3"/>
+        <classes>
+            <class name="NopCommerce.Test.TestUserAbleToLogin"/>
+        </classes>
+    </test>
+</suite>
