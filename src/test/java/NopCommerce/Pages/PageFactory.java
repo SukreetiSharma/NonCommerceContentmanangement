@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
         WebDriver driver;
         public UserAbleToLogin toLogin;
         public UserabltoAddTopics toAdd;
+        public UserableToLogout tologout;
 
         public PageFactory(WebDriver driver){
             this.driver = driver;
@@ -21,6 +22,12 @@ import org.openqa.selenium.WebDriver;
                 toAdd = new UserabltoAddTopics(driver);
             }
             return toAdd;
+        }
+        public UserableToLogout getToLogout(){
+            if(tologout == null){
+                tologout = new UserableToLogout(driver);
+            }
+            return tologout;
         }
 
     }
