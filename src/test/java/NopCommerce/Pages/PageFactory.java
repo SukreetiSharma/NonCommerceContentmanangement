@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
         public UserAbleToLogin toLogin;
         public UserabltoAddTopics toAdd;
         public UserableToLogout tologout;
+        public UserAbleToSearchMessageTemlate toSearch;
 
         public PageFactory(WebDriver driver){
             this.driver = driver;
@@ -28,6 +29,12 @@ import org.openqa.selenium.WebDriver;
                 tologout = new UserableToLogout(driver);
             }
             return tologout;
+        }
+        public UserAbleToSearchMessageTemlate getToSearchMeassage(){
+            if(toSearch == null){
+                toSearch = new UserAbleToSearchMessageTemlate(driver);
+            }
+            return toSearch;
         }
 
     }

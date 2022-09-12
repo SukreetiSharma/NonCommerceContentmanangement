@@ -14,4 +14,11 @@
             <class name="NopCommerce.Test.TestUserableToAddTopics"/>
         </classes>
     </test>
+    <test name="Verify User is able to Search Message">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="testRunId" value="TCTC-4"/>
+        <classes>
+            <class name="NopCommerce.Test.TestUserAbleToSeachmessage"/>
+        </classes>
+    </test>
 </suite>
