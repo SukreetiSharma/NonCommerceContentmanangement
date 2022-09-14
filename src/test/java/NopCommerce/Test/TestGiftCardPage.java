@@ -3,12 +3,12 @@ package NopCommerce.Test;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
-public class TestUserAbleToSeachmessage extends BaseClass {
+public class TestGiftCardPage extends BaseClass{
 
     @Test
-    public void AbleToSearch() throws IOException {
+    public void AbleToSearchGift() throws IOException {
         pageFactory.getUserAbleToLogin().LoginToDashboard();
-        pageFactory.getToSearchMeassage().Searchmeassage();
+        pageFactory.getSearchGiftCard().giftCardPage();
         pageFactory.getToLogout().ableToLogout();
     }
 }

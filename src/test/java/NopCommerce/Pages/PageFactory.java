@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
         public UserabltoAddTopics toAdd;
         public UserableToLogout tologout;
         public UserAbleToSearchMessageTemlate toSearch;
+        public OrderPage SearchOrder;
+        public GiftCardPage SearchGiftcard;
 
         public PageFactory(WebDriver driver){
             this.driver = driver;
@@ -39,6 +41,20 @@ import org.openqa.selenium.WebDriver;
                 toSearch = new UserAbleToSearchMessageTemlate(driver);
             }
             return toSearch;
+        }
+
+        public OrderPage getSearchOrder(){
+            if(SearchOrder == null){
+                SearchOrder = new OrderPage(driver);
+            }
+            return SearchOrder;
+        }
+
+        public GiftCardPage getSearchGiftCard(){
+            if(SearchGiftcard == null){
+                SearchGiftcard = new GiftCardPage(driver);
+            }
+            return SearchGiftcard;
         }
 
     }
