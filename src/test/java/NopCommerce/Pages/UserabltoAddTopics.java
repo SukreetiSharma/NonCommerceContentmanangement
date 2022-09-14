@@ -13,11 +13,12 @@ public class UserabltoAddTopics {
     public UserabltoAddTopics(WebDriver driver) {
         this.driver = driver;
     }
-    public void addTopics() throws InterruptedException {
+    
+    public void addTopics(){
         driver.findElement(Topics).click();
         driver.findElement(add).click();
         driver.findElement(Title).sendKeys("New Topics");
-        driver.findElement(save).click();
+     //  driver.findElement(save).click();
     }
 
 }
