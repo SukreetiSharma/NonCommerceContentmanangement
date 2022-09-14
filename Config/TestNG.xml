@@ -16,7 +16,7 @@
     </test>
     <test name="Verify User is able to Search Message">
         <parameter name="browserName" value="chrome"></parameter>
-        <parameter name="testRunId" value="TCTC-4"/>
+        <parameter name="testRunId" value="TCTC-3"/>
         <classes>
             <class name="NopCommerce.Test.TestUserAbleToSeachmessage"/>
         </classes>
