@@ -1,24 +1,34 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Cases" verbose="1" >
-    <test name="Verify User is able to Login">
-        <parameter name="browserName" value="chrome"></parameter>
-        <parameter name="testRunId" value="TCTC-1"/>
-        <classes>
-            <class name="NopCommerce.Test.TestUserAbleToLogin"/>
-        </classes>
-    </test>
+    <listeners>
+        <listener class-name="NopCommerce.Reports.Listener"></listener>
+    </listeners>
     <test name="Verify User is able to Add topics">
         <parameter name="browserName" value="chrome"></parameter>
-        <parameter name="testRunId" value="TCTC-2"/>
+        <parameter name="testRunId" value="TC-1"/>
         <classes>
             <class name="NopCommerce.Test.TestUserableToAddTopics"/>
         </classes>
     </test>
     <test name="Verify User is able to Search Message">
         <parameter name="browserName" value="chrome"></parameter>
-        <parameter name="testRunId" value="TCTC-3"/>
+        <parameter name="testRunId" value="TC-2"/>
         <classes>
             <class name="NopCommerce.Test.TestUserAbleToSeachmessage"/>
+        </classes>
+    </test>
+    <test name="Verify User is able to Search Order">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="testRunId" value="Tarun_TC-01"/>
+        <classes>
+            <class name="NopCommerce.Test.TestOrderPage"/>
+        </classes>
+    </test>
+    <test name="Verify User is able to Search Gify Card">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="testRunId" value="Tarun_TC-02"/>
+        <classes>
+            <class name="NopCommerce.Test.TestGiftCardPage"/>
         </classes>
     </test>
 </suite>

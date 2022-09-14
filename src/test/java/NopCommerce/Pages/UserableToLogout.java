@@ -14,7 +14,6 @@ public class UserableToLogout {
 
     public void ableToLogout() {
         driver.findElement(Logout).click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
     }
 
 }
